@@ -1,0 +1,27 @@
+{
+  "name": "fs_puh_back",
+  "version": "1.0.0",
+  "description": "-.-",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saskeli/fs_puh_back.git"
+  },
+  "author": "Saska Dönges",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saskeli/fs_puh_back/issues"
+  },
+  "homepage": "https://github.com/saskeli/fs_puh_back#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
