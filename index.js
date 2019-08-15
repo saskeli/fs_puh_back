@@ -1,8 +1,10 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const morgan = require('morgan')
+const cors = require('cors')
 const app = express()
 
+app.use(cors())
 app.use(bodyParser.json())
 app.use(morgan((tokens, req, res) => {
     return [
@@ -15,7 +17,7 @@ app.use(morgan((tokens, req, res) => {
     ].join(" ")
 }))
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 let persons = [
     {
