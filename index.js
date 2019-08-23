@@ -45,12 +45,12 @@ app.post("/api/persons", (req, res) => {
 
 app.get("/api/persons/:id", (req, res) => {
     Person.findById(req.params.id).then(person => {
-        response.json(person.toJSON());
+        res.json(person.toJSON());
     });
 });
 
 app.get("/info", (req, res) => {
-    people.find({}).then(result => {
+    Person.find({}).then(result => {
         res.send(`<p>Puhelinluettelossa on ${result.length} henkilön tiedot</p><p>${Date().toString()}</p>`);
     })
 });
